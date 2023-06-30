@@ -22,8 +22,8 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+            $this->call(TodoSeeder::class);
             $this->call(TaskSeeder::class);
             $this->call(StepSeeder::class);
-            $this->call(TodoSeeder::class);
     }
 }
